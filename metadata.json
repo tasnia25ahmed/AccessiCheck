@@ -1,0 +1,5 @@
+{
+  "name": "A11Y Scan",
+  "description": "An AI-powered assistant that evaluates, fixes, and enhances the accessibility of PDFs, images, and websites according to AODA and WCAG 2.1 AA standards.",
+  "requestFramePermissions": []
+}
