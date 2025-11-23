@@ -1,19 +1,19 @@
 <div align="center"> <img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" /> </div>
-AccessiCheck - AI Accessibility Scanner
+🚀 AccessiCheck - AI Accessibility Scanner
 
-AccessiCheck is an AI-powered tool that analyzes PDFs, images, and HTML content for accessibility compliance according to AODA (Accessibility for Ontarians with Disabilities Act) and WCAG 2.1 AA standards.
+AccessiCheck is an AI-powered accessibility tool that analyzes PDFs, images, and HTML for compliance with AODA (Accessibility for Ontarians with Disabilities Act) and WCAG 2.1 AA standards.
 
-It not only identifies accessibility issues but also provides:
+It doesn’t just identify accessibility issues—it also gives you:
 
-A fixed, accessible HTML version
+📝 Fixed, accessible HTML versions
 
-A simplified plain-language version
+✨ Simplified, plain-language content
 
-An audio narration of the content
+🔊 Audio narration of your documents
 
-This project is ideal for improving accessibility in digital content quickly, using AI to save time during audits or hackathons.
+Perfect for digital accessibility audits, hackathons, or just making your content more inclusive—fast!
 
-Tech Stack
+💻 Tech Stack
 
 Frontend: React (TypeScript)
 
@@ -25,49 +25,47 @@ Icons: Lucide React
 
 Markdown rendering: React Markdown
 
-AI Backend: Google Gemini API (for content analysis, fixes, and TTS)
+AI Backend: Google Gemini API (content analysis, fixes, TTS)
 
 Bundler/Dev Server: Vite
 
-Run Locally
+⚡ Run Locally
+Prerequisites
 
-Prerequisites: Node.js
+Node.js installed
 
-Install dependencies:
-
+Install dependencies
 npm install
 
+Set your Gemini API key
 
-Set your Gemini API key:
-
-Create a .env.local file in the root:
+Create a .env.local file in the project root:
 
 GEMINI_API_KEY=your_gemini_api_key_here
 
-
-Run the app:
-
+Start the app
 npm run dev
 
 
-Open your browser at http://localhost:3000.
+Open your browser at: http://localhost:3000
+ 🌐
 
-Features
+✨ Features
 
-Upload PDFs, images, or HTML for accessibility scanning
+📄 Upload PDFs, images, or HTML for accessibility scanning
 
-Get detailed issue reports with severity levels
+🛠 Get detailed issue reports with severity levels
 
-Download fixed HTML for immediate use
+💾 Download fixed HTML for immediate use
 
-View simplified, plain-language content
+🗒 View simplified, plain-language content
 
-Listen to the audio narration of the document
+🔊 Listen to audio narration of the document
 
-Notes
+📝 Notes
 
-This is a hackathon-ready project with minimal setup.
+Hackathon-ready, minimal setup 🚀
 
-Do not commit your Gemini API key.
+Do not commit your Gemini API key 🔑
 
-Works best in modern browsers (Chrome, Edge, Firefox)
+Optimized for modern browsers (Chrome, Edge, Firefox)
