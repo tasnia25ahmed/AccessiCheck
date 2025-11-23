@@ -3,7 +3,7 @@
 
 This contains everything you need to run your app locally.
 
-View your app in AI Studio: https://ai.studio/apps/drive/1aAkTbLkoW4zYWk1NYuRFFYxoaa0Y0cxG
+View our app in AI Studio: https://ai.studio/apps/drive/1aAkTbLkoW4zYWk1NYuRFFYxoaa0Y0cxG
 
 
 🚀 AccessiCheck - AI Accessibility Scanner
