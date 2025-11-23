@@ -59,7 +59,7 @@ export const InputSection: React.FC<InputSectionProps> = ({ onInputSubmit, isLoa
             onClick={() => setActiveTab(tab.id)}
             className={`flex items-center gap-2 px-4 py-2 rounded-full font-medium transition-all
               ${activeTab === tab.id 
-                ? 'bg-blue-600 text-white shadow-md' 
+                ? 'bg-indigo-600 text-white shadow-md' 
                 : 'bg-gray-100 text-gray-600 hover:bg-gray-200'}`}
           >
             {tab.icon}
@@ -71,8 +71,8 @@ export const InputSection: React.FC<InputSectionProps> = ({ onInputSubmit, isLoa
       <div className="border-2 border-dashed border-gray-300 rounded-xl p-8 bg-gray-50 text-center hover:bg-gray-50/80 transition-colors">
         {activeTab === 'PDF' || activeTab === 'IMAGE' ? (
           <div className="flex flex-col items-center">
-            <div className="bg-blue-100 p-4 rounded-full mb-4">
-              <Upload className="w-8 h-8 text-blue-600" />
+            <div className="bg-indigo-100 p-4 rounded-full mb-4">
+              <Upload className="w-8 h-8 text-indigo-600" />
             </div>
             <h3 className="text-lg font-semibold text-gray-900 mb-2">
               Upload your {activeTab === 'PDF' ? 'PDF' : 'Image'} file

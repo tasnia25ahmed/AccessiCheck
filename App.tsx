@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Activity, Check, FileCheck, Headphones, Layers, Layout as LayoutIcon, ShieldCheck, Download } from 'lucide-react';
+import { Activity, Check, FileCheck, Headphones, Layers, Layout as LayoutIcon, Shield, Download } from 'lucide-react';
 import { AnalysisResult, AnalysisStatus, FileInput } from './types';
 import { InputSection } from './components/InputSection';
 import { ScoreChart } from './components/ScoreChart';
@@ -109,20 +109,23 @@ const App: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col">
+   <div className="min-h-screen bg-slate-50 text-slate-900 font-sans selection:bg-indigo-100">
       {/* Header */}
-      <header className="bg-white border-b sticky top-0 z-50">
+      <header className="sticky top-0 z-50 bg-white border-b border-slate-200 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <div className="bg-blue-600 p-2 rounded-lg">
-              <ShieldCheck className="w-6 h-6 text-white" />
-            </div>
-            <span className="text-xl font-bold text-gray-900">A11Y Scan</span>
+            <Shield className="w-8 h-8 text-indigo-600" />
+            <h1 className="text-xl font-bold tracking-tight text-slate-900">
+              Accessi<span className="text-indigo-600">Check</span>
+              <span className="hidden sm:inline-block ml-2 text-sm font-normal text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full border border-slate-200">
+                WCAG 2.1 AA & AODA Validator
+              </span>
+            </h1>
           </div>
           <div className="flex items-center gap-4">
             <a href="#" className="text-sm font-medium text-gray-500 hover:text-gray-900">Documentation</a>
             <div className="h-4 w-px bg-gray-300"></div>
-            <span className="text-sm font-medium text-blue-600 bg-blue-50 px-3 py-1 rounded-full">WCAG 2.1 AA</span>
+            <span className="text-sm font-medium text-indigo-600 bg-blue-50 px-3 py-1 rounded-full">WCAG 2.1 AA</span>
           </div>
         </div>
       </header>
@@ -135,7 +138,7 @@ const App: React.FC = () => {
             <div className="mt-10">
               <div className="text-center mb-12">
                 <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight mb-4">
-                  Make Your Content <span className="text-blue-600">Universally Accessible</span>
+                  Make Your Content <span className="text-indigo-600">Universally Accessible</span>
                 </h1>
                 <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                   Upload PDFs, images, or HTML to evaluate, fix, and enhance accessibility compliance instantly with AI.
@@ -149,7 +152,7 @@ const App: React.FC = () => {
             <div className="flex flex-col items-center justify-center min-h-[50vh]">
               <div className="relative">
                 <div className="w-24 h-24 border-4 border-gray-200 rounded-full"></div>
-                <div className="w-24 h-24 border-4 border-blue-600 rounded-full border-t-transparent animate-spin absolute top-0 left-0"></div>
+                <div className="w-24 h-24 border-4 border-indigo-600 rounded-full border-t-transparent animate-spin absolute top-0 left-0"></div>
               </div>
               <h3 className="mt-8 text-xl font-semibold text-gray-900">Analyzing Content...</h3>
               <p className="text-gray-500 mt-2">Checking structure, contrast, and readability against AODA standards.</p>
@@ -197,7 +200,7 @@ const App: React.FC = () => {
                 <div className="bg-blue-50 rounded-xl p-6 border border-blue-100">
                   <div className="flex items-center gap-3 mb-3">
                     <div className="p-2 bg-blue-100 rounded-lg">
-                      <Headphones className="w-5 h-5 text-blue-600" />
+                      <Headphones className="w-5 h-5 text-indigo-600" />
                     </div>
                     <h3 className="font-semibold text-blue-900">Audio Version</h3>
                   </div>
@@ -222,19 +225,19 @@ const App: React.FC = () => {
                   <div className="border-b border-gray-200 px-6 py-4 flex items-center gap-4 overflow-x-auto">
                     <button 
                       onClick={() => setViewMode('ISSUES')}
-                      className={`pb-1 text-sm font-medium transition-colors whitespace-nowrap flex items-center gap-2 ${viewMode === 'ISSUES' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500 hover:text-gray-700'}`}
+                      className={`pb-1 text-sm font-medium transition-colors whitespace-nowrap flex items-center gap-2 ${viewMode === 'ISSUES' ? 'text-indigo-600 border-b-2 border-indigo-600' : 'text-gray-500 hover:text-gray-700'}`}
                     >
                       <Activity className="w-4 h-4" /> Analysis ({result.issues_found.length} Issues)
                     </button>
                     <button 
                       onClick={() => setViewMode('FIXED')}
-                      className={`pb-1 text-sm font-medium transition-colors whitespace-nowrap flex items-center gap-2 ${viewMode === 'FIXED' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500 hover:text-gray-700'}`}
+                      className={`pb-1 text-sm font-medium transition-colors whitespace-nowrap flex items-center gap-2 ${viewMode === 'FIXED' ? 'text-indigo-600 border-b-2 border-indigo-600' : 'text-gray-500 hover:text-gray-700'}`}
                     >
                       <FileCheck className="w-4 h-4" /> Fixed Version
                     </button>
                     <button 
                       onClick={() => setViewMode('SIMPLIFIED')}
-                      className={`pb-1 text-sm font-medium transition-colors whitespace-nowrap flex items-center gap-2 ${viewMode === 'SIMPLIFIED' ? 'text-blue-600 border-b-2 border-blue-600' : 'text-gray-500 hover:text-gray-700'}`}
+                      className={`pb-1 text-sm font-medium transition-colors whitespace-nowrap flex items-center gap-2 ${viewMode === 'SIMPLIFIED' ? 'text-indigo-600 border-b-2 border-indigo-600' : 'text-gray-500 hover:text-gray-700'}`}
                     >
                       <LayoutIcon className="w-4 h-4" /> Simplified View
                     </button>

@@ -24,7 +24,7 @@ export const Button: React.FC<ButtonProps> = ({
   const disabledStyles = isDisabled ? "opacity-50 cursor-not-allowed pointer-events-none" : "";
   
   const variants = {
-    primary: "bg-blue-600 text-white hover:bg-blue-700 focus:ring-blue-500",
+    primary: "bg-indigo-600 text-white hover:bg-blue-700 focus:ring-blue-500",
     secondary: "bg-indigo-600 text-white hover:bg-indigo-700 focus:ring-indigo-500",
     outline: "border-2 border-gray-300 text-gray-700 hover:bg-gray-50 focus:ring-gray-500",
     ghost: "text-gray-600 hover:bg-gray-100 focus:ring-gray-400",
