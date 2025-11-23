@@ -3,6 +3,7 @@
 
 AccessiCheck is an AI-powered accessibility tool that analyzes PDFs, images, and HTML for compliance with AODA (Accessibility for Ontarians with Disabilities Act) and WCAG 2.1 AA standards.
 
+
 It doesn’t just identify accessibility issues—it also gives you:
 
 📝 Fixed, accessible HTML versions
@@ -12,6 +13,7 @@ It doesn’t just identify accessibility issues—it also gives you:
 🔊 Audio narration of your documents
 
 Perfect for digital accessibility audits, hackathons, or just making your content more inclusive—fast!
+
 
 💻 Tech Stack
 
@@ -28,6 +30,7 @@ Markdown rendering: React Markdown
 AI Backend: Google Gemini API (content analysis, fixes, TTS)
 
 Bundler/Dev Server: Vite
+
 
 ⚡ Run Locally
 Prerequisites
@@ -50,6 +53,7 @@ npm run dev
 Open your browser at: http://localhost:3000
  🌐
 
+
 ✨ Features
 
 📄 Upload PDFs, images, or HTML for accessibility scanning
@@ -61,6 +65,7 @@ Open your browser at: http://localhost:3000
 🗒 View simplified, plain-language content
 
 🔊 Listen to audio narration of the document
+
 
 📝 Notes
 
