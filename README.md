@@ -7,8 +7,12 @@ View our app in AI Studio: https://ai.studio/apps/drive/1aAkTbLkoW4zYWk1NYuRFFYx
 
 
 🚀 AccessiCheck - AI Accessibility Scanner
+A hackathon-built, AI-powered accessibility scanner that analyzes PDFs, images, and HTML for compliance with AODA and WCAG 2.1 AA.
+
+Built during an 8‑hour "Vibe the Code hackathon" by MLH
 
 AccessiCheck is an AI-powered accessibility tool that analyzes PDFs, images, and HTML for compliance with AODA (Accessibility for Ontarians with Disabilities Act) and WCAG 2.1 AA standards.
+
 
 
 It doesn’t just identify accessibility issues—it also gives you:
